@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>AnwHA</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <head>
+ <body>
+   <h1> Smart Meter 1</h1>
+   <h2>Anschau</h2>
+   <form>
+   <img src=https://upload.wikimedia.org/wikipedia/commons/9/9a/Intelligenter_zaehler-_Smart_meter.jpg></image>
+   <p> Zählernummer: SM 12724936 </p>
+   <p id = "statusetc"></p>
+  </form>
+  
+ <form>
+  <label>Nutzererkennung</label>
+   <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" id = "iniMar"class="form-control" placeholder="Initialien und MartikelNr."> 
+    </div>
+  </div>
+   
+  <label >Verbrauch</label>
+   <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" id = "verbrauchswert" class="form-control" placeholder="Verbrauchswert in kWh">
+        <span class="input-group-btn">
+          <button type="button" onclick = writeText()>GO!</button>      
+        </span>
+      </input>
+    </div>
+  </div>
+  <p></p>
+
+  </form>
+  
+ 
+<table style="width:100%" id = "myTable"
+  tr:nth-child(even) {background-color: #f2f2f2}>
+  
+  <tr>
+    <th>Nutzer</th>
+    <th>Verbrauchswert</th> 
+    <th>Uhrzeit</th>
+  </tr>
+</table>
+  
+ </body>
+</head>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
